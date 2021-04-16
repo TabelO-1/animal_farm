@@ -1,9 +1,28 @@
-'use strict'
-console.log('hello world');
+'use strict';
+//console.log('hello world');
 
-function CreateAnimal(animalName) {
-    this.name = animalName
+function Create(animalName) {
+  this.name = animalName;
 }
-    CreateAnimal.prototype.render(); {
-        
-    }
+Create.prototype.render = function () {
+  let section = document.getElementById(this.animalName);
+
+  let div = document.createElement("div");
+
+  div.className = this.name;
+
+  div.textContent = this.name;
+
+  section.appendChild(div);
+
+  console.log("this should work");
+};
+
+let catButton = document.getElementById("makeCat");
+
+catButton.addEventListener("click", createCat);
+
+function createCat() {
+  let cat = new Create("cat");
+  cat.render();
+}
