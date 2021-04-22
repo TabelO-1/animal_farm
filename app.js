@@ -12,7 +12,7 @@ function Create(animalName, animalClass, animalId) {
 elements Id, then creates a div element. Afterwards
 it sets the class to the class paramater, then it sets
 the text content to the name paramater then appendChild
-to the let div*/
+to div*/
 Create.prototype.render = function () {
   let target = document.getElementById(this.id)
   let div = document.createElement('div');
