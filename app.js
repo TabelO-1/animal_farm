@@ -20,7 +20,7 @@ Create.prototype.render = function () {
   div.textContent = this.name;
   target.appendChild(div);
 };
-/*Fix this comment later*/
+/*Undo changes, changes broke it*/
 let catButton = document.getElementById('makeCat');
 catButton.addEventListener('click', createAnimal);
 let dogButton = document.getElementById('makeDog');
