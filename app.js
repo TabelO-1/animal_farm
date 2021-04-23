@@ -20,31 +20,35 @@ Create.prototype.render = function () {
   div.textContent = this.name;
   target.appendChild(div);
 };
-/*Undo changes, changes broke it*/
+/*this targets the 'makeCat' id then adds a click 
+event listener, when clicked, it calls the createCat 
+function. createCat sends a template to the constuctor
+function, it sends it's name captialized, the class
+you want to assign, and the id you want to target when
+using the render function. dogButton, horseButton, and
+sheepButton all do the same thing, just with different
+names.*/
 let catButton = document.getElementById('makeCat');
-catButton.addEventListener('click', createAnimal);
-let dogButton = document.getElementById('makeDog');
-dogButton.addEventListener('click', createAnimal);
-let sheepButton = document.getElementById('makeSheep');
-sheepButton.addEventListener('click', createAnimal);
-let horseButton = document.getElementById('makeHorse');
-horseButton.addEventListener('click', createAnimal);
-
-function createAnimal() {
-if (catButton.clicked = true) {
+catButton.addEventListener('click', createCat);
+function createCat() {
   let cat = new Create('Cat', 'catObject', 'cat');
   cat.render();
-} 
-if (dogButton.clicked = true); {
+}
+let dogButton = document.getElementById('makeDog');
+dogButton.addEventListener('click', createDog);
+function createDog() {
   let dog = new Create('Dog', 'dogObject', 'dog');
   dog.render();
-} 
-if (sheepButton.clicked = true); {
+}
+let sheepButton = document.getElementById('makeSheep');
+sheepButton.addEventListener('click', createSheep);
+function createSheep() {
   let sheep = new Create('Sheep', 'sheepObject', 'sheep');
   sheep.render();
-} 
-if (horseButton.clicked = true); {
+}
+let horseButton = document.getElementById('makeHorse');
+horseButton.addEventListener('click', createHorse);
+function createHorse() {
   let horse = new Create('Horse', 'horseObject', 'horse');
   horse.render();
-}
 }
