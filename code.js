@@ -20,7 +20,7 @@ p.textContent = journal;
 article.appendChild(h2);
 article.appendChild(p);
 
-const main = document.querySelector('main')
+const main = document.getElementById('main');
 main.appendChild(article);
 
 }

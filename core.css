@@ -10,28 +10,47 @@ html, body {
     background:#444;
     color: #eee;
     height: 70px;
-    line-height:70px;
-    text-align:center;
+    line-height: 70px;
+    text-align: center;
   }
   
   main {
-    background: #fafafa
+    background-color: whitesmoke;
   }
   
   main > .content {
     background-color: whitesmoke;
   }
   
+  main > .content > main > article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-weight: bold;
+      background-color: beige;
+      border: 2px solid black;
+      border-radius: 20%;
+      height: 200px;
+      width: 200px;
+      padding: 10px;
+      margin-top: auto;
+      margin-right: auto;
+      margin-bottom: 5px;
+      margin-left: auto;
+  }
+
   main > aside {
-    background: #9c9;
+    color: whitesmoke;
+    background: burlywood;
     height: 100%
   }
   
   main > nav {
-    background: #ff0000;
+    color: whitesmoke;
+    background: burlywood;
     height: 100%
   }
-  
   .deck {
     background: #0fa0ce;
   }

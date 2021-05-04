@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Journal</title>
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="core.css">
+  <!-- <link rel="stylesheet" href="float.css"> -->
+  <!-- <link rel="stylesheet" href="flexbox.css"> -->
+  <link rel="stylesheet" href="grid.css">
 </head>
-<a href="./index.html">Link to Animal Farm</a>
 <body>
-    <main id="main">
-            <form>
+
+  <header class="centerWords">
+    <h1>Farm Journal</h1>
+  </header>
+
+  <main>
+    <nav class="centerWords">
+        <strong>Navigation</strong>
+        <a href="index.html">Animal Farm</a>
+      </nav>
+
+    <aside class="centerWords"></aside>
+
+    <div class="content">
+        <main id="main">
+            <form id="form">
                 <fieldset>
                     <label for="title">Title</label>
                     <input type="text" name="title" placeholder="Animal Farm Journal">
@@ -19,16 +37,29 @@
                     <input type="submit">
                 </fieldset>
             </form>
-
-            <article>
+        
+            <article class="farmArticle">
                 <h2>Monday: A Good Day</h2>
                 <p>Today we created a bunch of cats and dogs, they are running around like crazy animals.</p>
             </article>
-            <article>
+            <article class="farmArticle">
                 <h2>Tuesday: Another Good Day</h2>
                 <p>One of our sheep we create had babies, so now we have a ton of them...this is getting expensive.</p>
             </article>
-    </main>
+        </main>
+    </div>
+
+
+  </main>
+
+  <footer class="centerWords">
+
+  &copy;yourname 2021
+
+  </footer>
+
 </body>
-    <script src="code.js"></script>
+<script src="code.js"></script>
 </html>
+
+<!--  -->
