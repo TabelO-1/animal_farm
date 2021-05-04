@@ -1,10 +1,5 @@
-body {
-    background-color: whitesmoke;
-  }
-  h1 {
-    text-align: center;
-  }
   #main {
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -25,7 +20,7 @@ body {
     margin-bottom: 5px;
     margin-left: auto;
   }
-  .CatObject {
+  .catObject {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +36,7 @@ body {
     margin-bottom: 5px;
     margin-left: auto;
   }
-  .DogObject {
+  .dogObject {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +52,7 @@ body {
     margin-bottom: 5px;
     margin-left: auto;
   }
-  .SheepObject {
+  .sheepObject {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +68,7 @@ body {
     margin-bottom: 5px;
     margin-left: auto;
   }
-  .HorseObject {
+  .horseObject {
     display: flex;
     align-items: center;
     justify-content: center;
